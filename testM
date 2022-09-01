@@ -1,0 +1,35 @@
+/*
+ * lcd__banner.c
+ *
+ *  Created on: Aug 30, 2022
+ *      Author: dmvp01
+ */
+#include "lcdBanner.h"
+#include "math.h"
+void init_lcd()
+{
+    timer_init(); // Initialize Timer, needed before any LCD screen fucntions can be called
+                  // and enables time functions (e.g. timer_waitMillis)
+    lcd_init();   // Initialize the the LCD screen.  This also clears the screen.
+}
+void print_banner(char * str)
+{
+    char  str[]= "Microcontrollers are lots of fun!";
+    char print[]="";
+    for(int i=0; i< sizeof(str); i++){
+        
+        print+=str[0];
+        printf(print);
+        
+    }
+
+
+
+
+// todo Count numer of characters
+// create a string with correct number of spaces beforehand 0
+//lcd printf with substring of 20 characters
+ //
+}
+
+
